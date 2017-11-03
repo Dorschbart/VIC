@@ -52,6 +52,9 @@ assert_close_double(double x,
 {
     if (fabs(x - y) <= abs_tol + rtol * fabs(y)) {
         return true;
-    }
+    }else{
+        printf("%.20f is bigger then %.20f" ,fabs(x - y), abs_tol + rtol * fabs(y));
     return false;
 }
+}
+
